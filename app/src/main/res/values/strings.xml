@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="LCDH_name">La Casa Del Habano</string>
+    <string name="City">Moscow</string>
+    <string name="Address">Moscow, Bakhrushina str., 23/1</string>
+    <string name="Telephone">+7 (499) 230 3061</string>
+    <string name="Hours">Mon. - Sun., 10:00 - 22:00</string>
+
+</resources>

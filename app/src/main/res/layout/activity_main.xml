@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.egrishin.singlescreenapp.MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LCDH_name"
+        />
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:text="@string/City"
+        />
+
+    <View
+        android:id="@+id/lineA"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/city"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/pics"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/lineA"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="6dp"
+            android:paddingRight="3dp"
+            android:src="@drawable/i1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="6dp"
+            android:src="@drawable/i2"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/pics"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/addr"
+        style="@style/Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:text="@string/Address"
+        />
+
+    <TextView
+        android:id="@+id/hour"
+        style="@style/Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addr"
+        android:text="@string/Hours"
+        />
+
+    <TextView
+        android:id="@+id/tel"
+        style="@style/Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hour"
+        android:text="@string/Telephone"
+        />
+
+</RelativeLayout>
+</ScrollView>
